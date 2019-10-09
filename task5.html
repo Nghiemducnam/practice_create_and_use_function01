@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star= ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let starName= ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let input=prompt("Nhập tên ngôi sao:");
+    let result= [];
+    function findTheStar () {
+        if(star.indexOf(input) == -1) {
+             alert('không tìm thấy');
+        }else {
+            result= starName[star.indexOf(input)];
+            alert(result);
+        }
+    }
+findTheStar();
+</script>
+
+</body>
+</html>
